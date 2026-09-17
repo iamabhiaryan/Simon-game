@@ -1,0 +1,160 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    background: #111827;
+    color: white;
+}
+
+.game-container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+#message {
+    font-size: 18px;
+    color: #d1d5db;
+    margin-bottom: 20px;
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+    font-size: 20px;
+
+    margin-bottom: 30px;
+}
+
+.simon-board {
+    width: 360px;
+    height: 360px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+
+    margin: auto;
+}
+
+.color-btn {
+    border: none;
+    cursor: pointer;
+
+    transition: 0.15s;
+
+    opacity: 0.75;
+}
+
+.color-btn:hover {
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+.green {
+    background: #22c55e;
+
+    border-radius: 100% 10% 10% 10%;
+}
+
+.red {
+    background: #ef4444;
+
+    border-radius: 10% 100% 10% 10%;
+}
+
+.yellow {
+    background: #eab308;
+
+    border-radius: 10% 10% 10% 100%;
+}
+
+.blue {
+    background: #3b82f6;
+
+    border-radius: 10% 10% 100% 10%;
+}
+
+/* Flash animation */
+
+.color-btn.flash {
+    opacity: 1;
+
+    transform: scale(1.08);
+
+    box-shadow:
+        0 0 30px white,
+        0 0 60px white;
+}
+
+/* Wrong answer */
+
+body.game-over {
+    background: #7f1d1d;
+}
+
+/* Start button */
+
+#start-btn {
+    margin-top: 30px;
+
+    padding: 12px 30px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #6366f1;
+    color: white;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+#start-btn:hover {
+    background: #4f46e5;
+
+    transform: scale(1.05);
+}
+
+#start-btn:active {
+    transform: scale(0.98);
+}
+
+/* Mobile */
+
+@media (max-width: 500px) {
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .simon-board {
+        width: 300px;
+        height: 300px;
+    }
+
+    .score-board {
+        font-size: 17px;
+    }
+}
