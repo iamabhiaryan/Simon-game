@@ -48,11 +48,6 @@ function getButton(color) {
     }
 }
 
-
-// ===============================
-// Flash a button
-// ===============================
-
 function flashButton(color) {
 
     const button = getButton(color);
@@ -64,11 +59,6 @@ function flashButton(color) {
     }, 400);
 }
 
-
-// ===============================
-// Generate random color
-// ===============================
-
 function getRandomColor() {
 
     const randomIndex =
@@ -76,11 +66,6 @@ function getRandomColor() {
 
     return colors[randomIndex];
 }
-
-
-// ===============================
-// Play computer sequence
-// ===============================
 
 function playSequence() {
 
@@ -115,10 +100,6 @@ function playSequence() {
     }, 700);
 }
 
-
-// ===============================
-// Start next level
-// ===============================
 
 function nextLevel() {
 
@@ -165,10 +146,6 @@ function startGame() {
     }, 1000);
 }
 
-
-// ===============================
-// Check player's answer
-// ===============================
 
 function checkAnswer(color) {
 
