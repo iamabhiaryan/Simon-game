@@ -4,9 +4,7 @@ A simple and interactive **Simon Game** built using **HTML, CSS, and JavaScript*
 
 The game tests your memory by showing a sequence of colors. Your goal is to remember and repeat the sequence correctly. As you progress through the levels, the sequence becomes longer and more challenging.
 
-## 🚀 Live Demo
-
-You can add your deployed project link here:
+:## 🚀 Live Demo
 
 **Live Demo:** Coming Soon
 
