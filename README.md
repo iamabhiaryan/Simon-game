@@ -6,7 +6,8 @@ The game tests your memory by showing a sequence of colors. Your goal is to reme
 
 :## 🚀 Live Demo
 
-**Live Demo:** Coming Soon
+**Live Demo:** 
+ https://iamabhiaryan.github.io/Simon-game/
 
 ## 📸 Features
 
